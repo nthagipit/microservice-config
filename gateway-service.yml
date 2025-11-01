@@ -13,26 +13,26 @@ spring:
           enabled: true
           lower-case-service-id: true
 
-      routes:
-        - id: user-service
-          uri: lb://USER-SERVICE
-          predicates:
-           - Path=/api/users/**
+      # routes:
+      #   - id: user-service
+      #     uri: lb://USER-SERVICE
+      #     predicates:
+      #      - Path=/api/users/**
 
-        - id: book-service
-          uri: lb://BOOK-SERVICE
-          predicates:
-            - Path=/api/books/**
+      #   - id: book-service
+      #     uri: lb://BOOK-SERVICE
+      #     predicates:
+      #       - Path=/api/books/**
 
-        - id: order-service
-          uri: lb://ORDER-SERVICE
-          predicates:
-            - Path=/api/orders/**
+      #   - id: order-service
+      #     uri: lb://ORDER-SERVICE
+      #     predicates:
+      #       - Path=/api/orders/**
             
-        - id: auth-service
-          uri: lb://AUTH-SERVICE
-          predicates:
-            - Path=/api/auths/**
+      #   - id: auth-service
+      #     uri: lb://AUTH-SERVICE
+      #     predicates:
+      #       - Path=/api/auths/**
         
 
 eureka:
